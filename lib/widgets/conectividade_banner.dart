@@ -39,28 +39,35 @@ class ConectividadeBanner extends StatelessWidget {
         // ---------------------------------------------------------------
         // Só aparece quando NÃO está conectado ('!conectado').
         if (!conectividade.conectado)
-          Container(
-            width: double.infinity, // ocupa toda a largura da tela.
+          Material(
+            // 'Material' garante que o texto seja desenhado corretamente
+            // (com a fonte padrão), mesmo acima da árvore do MaterialApp.
             color: Colors.red,
-            // 'SafeArea' evita que a faixa fique embaixo da barra de status
-            // do celular (relógio, bateria, etc.).
-            child: const SafeArea(
+            child: SafeArea(
+              // 'bottom: false' faz o SafeArea proteger apenas o TOPO
+              // (empurra a faixa para baixo da câmera/barra de status).
               bottom: false,
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 6),
-                child: Row(
-                  // Centraliza o conteúdo da faixa.
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.wifi_off,
                       color: Colors.white,
-                      size: 18,
+                      size: 16,
                     ),
-                    SizedBox(width: 8),
-                    Text(
-                      'Sem conexão com a internet',
-                      style: TextStyle(color: Colors.white),
+                    SizedBox(width: 6),
+                    // 'Flexible' permite que o texto se ajuste e não corte.
+                    Flexible(
+                      child: Text(
+                        'Sem conexão com a internet',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                        ),
+                      ),
                     ),
                   ],
                 ),
