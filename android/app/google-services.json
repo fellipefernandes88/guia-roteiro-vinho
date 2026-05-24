@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "163516367513",
+    "project_id": "guia-roteiro-vinho",
+    "storage_bucket": "guia-roteiro-vinho.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163516367513:android:d09ac341032bf1cb9cae08",
+        "android_client_info": {
+          "package_name": "br.com.fatec.guia_roteiro_vinho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163516367513-j93nvpckfrishs5o36ntv95oqpjmmq54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fatec.guia_roteiro_vinho",
+            "certificate_hash": "060a7decdb1e0ed2b9d53b86d545b084b13410d6"
+          }
+        },
+        {
+          "client_id": "163516367513-8fdmntb3jprt26bnkcekqs1kcd96uhuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm4WAYvSGC4_dIXuuk5ITZSXzvtQvkhTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163516367513-8fdmntb3jprt26bnkcekqs1kcd96uhuq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163516367513-c7lud1p4bppbf10ro7bdqfgjc7o407fu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.fatec.guiaRoteiroVinho"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
